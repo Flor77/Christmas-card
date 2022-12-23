@@ -1,12 +1,14 @@
 body {
-  margin: 100px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  margin-top: 30%;
   background: #eee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card {
-  width: 300px;
-  height: 300px;
+  width: 240px;
+  height: 240px;
   margin: 0 auto;
   position: relative;
   perspective: 1400px;
@@ -29,7 +31,6 @@ body {
 
 .left-card img {
   width: 100%;
-  overflow: hidden;
 }
 
 .left-card .card-front,
@@ -72,4 +73,21 @@ body {
 
 .right-card h2 {
   color: crimson;
+}
+
+@media screen and (max-width: 300px) {
+  .left-card .card-front,
+  .left-card .card-back {
+    position: absolute;
+    max-width: 100%;
+    max-height: auto;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+
+  .right-card {
+    max-width: 100vw;
+    max-height: auto;
+  }
 }
