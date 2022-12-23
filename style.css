@@ -1,7 +1,7 @@
 body {
   margin-left: 0 auto;
   margin-right: 0 auto;
-  margin-top: 30%;
+  margin-top: 5%;
   background: #eee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -52,9 +52,9 @@ body {
   transform: rotateY(-180deg);
 }
 
-.card.open {
+/* .card.open {
   left: 150px;
-}
+} */
 
 .right-card {
   width: 100%;
